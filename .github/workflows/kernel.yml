@@ -38,7 +38,7 @@ jobs:
         git clone https://github.com/provasish/AnyKernel3 --depth=1 anykernel
 
         DT=$(date +"%Y%m%d-%H%M")
-        config=vendor/kona-perf_defconfig
+        config="vendor/kona-perf_defconfig vendor/oplus.config"
 
         CROSS_COMPILE=$(pwd)/tc/aarch64-linux-android-4.9/bin/aarch64-linux-android-
         KERNEL_ARCH=arm64
