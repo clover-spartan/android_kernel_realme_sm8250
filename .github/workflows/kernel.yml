@@ -26,11 +26,7 @@ jobs:
 
     - name: Clone Clang
       run: |
-        git clone --depth=1 https://gitlab.com/provasishh/clang.git tc
-
-    - name: Setup ReSukiSU
-      run: |
-        curl -LSs "https://raw.githubusercontent.com/ReSukiSU/ReSukiSU/main/kernel/setup.sh" | bash
+        git clone --depth=1 https://gitlab.com/provasishh/clang-20.git tc
 
     - name: Build & Package Kernel
       run: |
